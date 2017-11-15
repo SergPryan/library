@@ -3,6 +3,7 @@ package entity;
 import javax.persistence.*;
 
 @Entity
+@EntityListeners(TestListener.class)
 public class Book {
 	
 	@Id
